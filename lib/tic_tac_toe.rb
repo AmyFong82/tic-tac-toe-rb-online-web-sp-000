@@ -27,8 +27,8 @@ def move(board, num, player)
   board[num] = player
 end
 
-def position_taken?(board, num)
-  board[num] == "X" || board[num] == "O"
+def position_taken?(board, index)
+  board[index] == "X" || board[index] == "O"
 end
 
 def valid_move?(board, index)
